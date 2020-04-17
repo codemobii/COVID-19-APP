@@ -29,7 +29,7 @@
                 <ul class="headLinks">
                     <li><a href="about.html">
                         <img src="assets/images/icons8_info_32px_1.png" 
-                        style="transform: translateX(-6px);" class="headIcon">
+                        style="transform: translateX(-4px);" class="headIcon">
                     </a></li>
                     <li><a href="#" class="logo">COVID-19</a></li>
                     <li class="headIcon moodToggler"></li>
@@ -55,7 +55,12 @@
             <div class="loadContainer">
                 <div class="appContent">
                     
-                    <div class="flexTitle">Cases, recovered and deaths in each country</div>
+                    <div class="flexTitle">LIST COUNTRIES AND DATA</div>
+
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">Total cases</li>
+                        <li class="tab-link" data-tab="tab-2">New cases</li>
+                    </ul>
     
                     <div class="graphCard2">
                         <ul class="meaning">
@@ -66,10 +71,11 @@
 
                     </div>
 
-                    <div class="dataTableCont">
+                    <div id="tab-1" class="dataTableCont current">
                         <table>
                             <thead>
                                 <tr>
+                                    <th>S/N</th>
                                     <th>Countries</th>
                                     <th><span style="background-color: #f9c851;" class="circle noM"></span></th>
                                     <th><span style="background-color: #10c469;" class="circle noM"></span></th>
@@ -80,11 +86,23 @@
 
                             </tbody>
                         </table>
+                    </div>
 
-                        <div id="pagination">
-	
-	
-                        </div>
+                    <div id="tab-2" class="dataTableCont">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>Countries</th>
+                                    <th><span style="background-color: #f9c851;" class="circle noM"></span></th>
+                                    <th><span style="background-color: #10c469;" class="circle noM"></span></th>
+                                    <th><span style="background-color: #ff5b5b;" class="circle noM"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="countryNewData">
+
+                            </tbody>
+                        </table>
                     </div>
     
                 </div>
